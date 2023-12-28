@@ -11,7 +11,7 @@ function Delete() {
         //console.log(`Form submitted:`);
         //console.log(`EMAIL ID: ${eemail}`);
 
-        axios.delete('http://localhost:4500/reg/remove/' + eemail)
+        axios.delete('https://pardhu-mahidhar.onrender.com/reg/remove/' + eemail)
             .then(res => {
                 console.log(res.data)
                 setMessage('EMPLOYEE SUCCESSFULLY DELETED')

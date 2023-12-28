@@ -25,7 +25,7 @@ function Viewalldoctor()
 
 const [Doclist, setDocList] = useState([]);
 useEffect(() => {
-    axios.get('http://localhost:4500/Doc')
+    axios.get('https://pardhu-mahidhar.onrender.com/Doc')
         .then(response => {
             console.log(response.data)
             setDocList(response.data);

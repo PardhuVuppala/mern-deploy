@@ -34,7 +34,7 @@ function Search()
     const handleSubmit = (evt) => {
         evt.preventDefault();
 
-        axios.get('http://localhost:4500/reg/search/' + eemail)
+        axios.get('https://pardhu-mahidhar.onrender.com/reg/search/' + eemail)
             .then(res => {
                 console.log(res.data)
                 setEmpList(res.data)

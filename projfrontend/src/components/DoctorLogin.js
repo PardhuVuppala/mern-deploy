@@ -24,7 +24,7 @@ function DoctorLogin()
 
          
 
-        axios.post('http://localhost:4500/Doc/logincheck',Doclogininfo)
+        axios.post('https://pardhu-mahidhar.onrender.com/Doc/logincheck',Doclogininfo)
       .then(res =>
         {
           console.log(res.data)

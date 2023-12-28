@@ -39,7 +39,7 @@ function Registration() {
         emppass: epass,
         empaddress: eaddress
     }
-  axios.post('http://localhost:4500/reg/register', empinfo)
+  axios.post('https://pardhu-mahidhar.onrender.com/reg/register', empinfo)
  .then(res => {
         console.log(res.data);
         setMessage('REGISTRATION SUCCESSFUL');

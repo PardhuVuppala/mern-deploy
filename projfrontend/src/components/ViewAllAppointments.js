@@ -11,7 +11,7 @@ function Patients()
     const [Patlist, setPatList] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:4500/Pat')
+        axios.get('https://pardhu-mahidhar.onrender.com/Pat')
             .then(response => {
                 console.log(response.data)
                 setPatList(response.data);

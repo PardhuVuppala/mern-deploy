@@ -43,7 +43,7 @@ function Registration1()
    }
 
 
-   axios.post('http://localhost:4500/Pat/RegPat', reginfo)
+   axios.post('https://pardhu-mahidhar.onrender.com/Pat/RegPat', reginfo)
    .then(res => {
           console.log(res.data)
           setMessage('APPOINTMENT SUCCESSFULLY BOOKED')

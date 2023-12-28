@@ -30,7 +30,7 @@ function SearchDoc() {
     const handleSubmit = (evt) => {
         evt.preventDefault();
 
-        axios.get('http://localhost:4500/Doc/search/' + Email)
+        axios.get('https://pardhu-mahidhar.onrender.com/Doc/search/' + Email)
             .then(res => {
                 console.log(res.data)
                 setDocList(res.data)

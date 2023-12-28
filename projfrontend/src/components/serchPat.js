@@ -34,7 +34,7 @@ function SearchPat()
     const handleSubmit = (evt) => {
         evt.preventDefault();
 
-        axios.get('http://localhost:4500/Pat/search/' + Name)
+        axios.get('https://pardhu-mahidhar.onrender.com/Pat/search/' + Name)
             .then(res => {
                 console.log(res.data)
                 setPatList(res.data)

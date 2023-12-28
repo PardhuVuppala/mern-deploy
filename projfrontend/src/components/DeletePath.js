@@ -11,7 +11,7 @@ function PatDelete() {
         //console.log(`Form submitted:`);
         //console.log(`EMAIL ID: ${eemail}`);
 
-        axios.delete('http://localhost:4500/Pat/remove/' + Name)
+        axios.delete('https://pardhu-mahidhar.onrender.com/Pat/remove/' + Name)
             .then(res => {
                 console.log(res.data)
                 setMessage('PATIENT APPOINTMENT SUCCESSFULLY DELETED')

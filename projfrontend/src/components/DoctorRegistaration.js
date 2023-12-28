@@ -45,7 +45,7 @@ function DoctorReg()
         
   }
  
-  axios.post('http://localhost:4500/Doc/Docregister', Docinfo)
+  axios.post('https://pardhu-mahidhar.onrender.com/Doc/Docregister', Docinfo)
  .then(res => {
         console.log(res.data)
         setMessage('REGISTRATION SUCCESSFUL')

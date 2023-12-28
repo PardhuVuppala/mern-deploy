@@ -13,7 +13,7 @@ function ViewAll()
     const [emplist, setEmpList] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:4500/reg')
+        axios.get('https://pardhu-mahidhar.onrender.com/reg')
             .then(response => {
                 console.log(response.data)
                 setEmpList(response.data);

@@ -15,7 +15,7 @@ function DocDelete()
         //console.log(`Form submitted:`);
         //console.log(`EMAIL ID: ${eemail}`);
 
-        axios.delete('http://localhost:4500/Doc/remove/' +email)
+        axios.delete('https://pardhu-mahidhar.onrender.com/Doc/remove/' +email)
             .then(res => {
                 console.log(res.data)
                 setMessage('DOCTOR SUCCESSFULLY DELETED')
